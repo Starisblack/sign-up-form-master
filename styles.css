@@ -1,4 +1,4 @@
-body{
+body {
   text-align: center;
   color: white;
   background-image: url("images/bg-intro-desktop.png"), linear-gradient(hsl(0, 100%, 74%), hsl(0, 100%, 74%));
@@ -7,46 +7,41 @@ body{
   font-family: 'Poppins', sans-serif;
 }
 
-.main-container{
+.main-container {
   display: grid;
   grid-template-columns: auto auto;
   grid-gap: 20px;
   width: 80%;
   margin: 6rem auto 0 auto;
-
 }
 
-
-.container-one{
+.container-one {
   text-align: left;
 }
 
-h1{
+h1 {
   font-size: 4rem;
   width: 90%;
   margin: 0;
 }
 
-.container-one p{
+.container-one p {
   width: 80%;
   line-height: 2;
 }
-
-
 
 .title {
   background-color: hsl(248, 32%, 49%);
   padding: 0.5rem 1rem;
   box-shadow: 5px 7px 8px #888888;
   border-radius: 10px;
-
 }
 
-.sub-title{
+.sub-title {
   opacity: 80%;
 }
 
-.user-registration{
+.user-registration {
   background-color: white;
   padding: 1.5rem;
   box-shadow: 5px 7px 8px #888888;
@@ -54,7 +49,7 @@ h1{
   position: relative;
 }
 
-input{
+input {
   display: block;
   width: 80%;
   padding: 0.8rem;
@@ -63,35 +58,34 @@ input{
   border: 1px solid;
 }
 
-
-.input-container{
+.input-container {
   position: relative;
   margin-bottom: 40px;
 }
 
-.input-icons{
+.input-icons {
   position: absolute;
   right: 10%;
   top: 18%;
 }
 
-.error-msg{
-  color:  hsl(0, 100%, 74%);
+.error-msg {
+  color: hsl(0, 100%, 74%);
   font-size: 0.7rem;
   position: absolute;
   top: 90%;
   right: 10%;
 }
 
-.password{
+.password {
   margin-bottom: 30px;
 }
 
-.input-icons, .error-msg{
+.input-icons, .error-msg {
   display: none;
 }
 
-.btn{
+.btn {
   width: 86%;
   padding: 0.8rem;
   color: white;
@@ -101,9 +95,9 @@ input{
   box-shadow: 0 5px #999;
 }
 
-
-
-.btn:hover {background-color: #3e8e41}
+.btn:hover {
+  background-color: #3e8e41
+}
 
 .btn:active {
   background-color: #3e8e41;
@@ -111,26 +105,52 @@ input{
   transform: translateY(4px);
 }
 
-
-.terms{
+.terms {
   margin-top: 15px;
   color: black;
   font-size: 0.8rem;
   opacity: 60%;
 }
 
-.sub-term{
+.sub-term {
   color: red;
   font-weight: bold;
 }
 
-
-.attribution{
+.attribution {
   font-size: 15px;
   text-align: center;
   margin-top: 50px;
 }
 
-  .attribution a {
-    color: hsl(228, 45%, 44%);
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width: 780px) {
+  .main-container {
+    width: 90%;
   }
+
+  .container-one {
+    grid-column: 1 / span 2;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+    width: 70%;
+    margin: 0;
+    margin: 0 auto;
+  }
+
+  .container-one p {
+    width: 100%;
+    line-height: 1.5;
+  }
+
+  .container-two {
+    grid-column: 1 / span 2;
+    grid-row: 2 / 3;
+  }
+}
