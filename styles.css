@@ -1,0 +1,136 @@
+body{
+  text-align: center;
+  color: white;
+  background-image: url("images/bg-intro-desktop.png"), linear-gradient(hsl(0, 100%, 74%), hsl(0, 100%, 74%));
+  background-size: cover, cover;
+  background-blend-mode: overlay;
+  font-family: 'Poppins', sans-serif;
+}
+
+.main-container{
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 20px;
+  width: 80%;
+  margin: 6rem auto 0 auto;
+
+}
+
+
+.container-one{
+  text-align: left;
+}
+
+h1{
+  font-size: 4rem;
+  width: 90%;
+  margin: 0;
+}
+
+.container-one p{
+  width: 80%;
+  line-height: 2;
+}
+
+
+
+.title {
+  background-color: hsl(248, 32%, 49%);
+  padding: 0.5rem 1rem;
+  box-shadow: 5px 7px 8px #888888;
+  border-radius: 10px;
+
+}
+
+.sub-title{
+  opacity: 80%;
+}
+
+.user-registration{
+  background-color: white;
+  padding: 1.5rem;
+  box-shadow: 5px 7px 8px #888888;
+  border-radius: 10px;
+  position: relative;
+}
+
+input{
+  display: block;
+  width: 80%;
+  padding: 0.8rem;
+  margin: 20px auto;
+  border-radius: 5px;
+  border: 1px solid;
+}
+
+
+.input-container{
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.input-icons{
+  position: absolute;
+  right: 10%;
+  top: 18%;
+}
+
+.error-msg{
+  color:  hsl(0, 100%, 74%);
+  font-size: 0.7rem;
+  position: absolute;
+  top: 90%;
+  right: 10%;
+}
+
+.password{
+  margin-bottom: 30px;
+}
+
+.input-icons, .error-msg{
+  display: none;
+}
+
+.btn{
+  width: 86%;
+  padding: 0.8rem;
+  color: white;
+  background-color: hsl(154, 59%, 51%);
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 5px #999;
+}
+
+
+
+.btn:hover {background-color: #3e8e41}
+
+.btn:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+
+.terms{
+  margin-top: 15px;
+  color: black;
+  font-size: 0.8rem;
+  opacity: 60%;
+}
+
+.sub-term{
+  color: red;
+  font-weight: bold;
+}
+
+
+.attribution{
+  font-size: 15px;
+  text-align: center;
+  margin-top: 50px;
+}
+
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
